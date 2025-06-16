@@ -15,7 +15,7 @@
 
 @media (max-width: 1200px) { .masonry { column-count: 3;  } }
 @media (max-width: 800px) { .masonry { column-count: 2;  } }
-@media (max-width: 500px) { .masonry { column-count: 2; } }
+@media (max-width: 500px) { .masonry { column-count: 1; } }
 
 
 /* .masonry-grid {
