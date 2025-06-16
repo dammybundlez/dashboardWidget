@@ -16,6 +16,7 @@ export async function GET(req: NextRequest) {
       usd: data[coin].usd,
     });
   } catch (err) {
-    return NextResponse.json({ err: "Crypto fetch failed" }, { status: 500 });
+    console.error("API error:", err);
+    return NextResponse.json({error: 'failed to fetch'}, { status: 500 });
   }
 }

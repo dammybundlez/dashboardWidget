@@ -10,6 +10,7 @@ export  async function GET() {
     const data = await apiRes.json();
    return NextResponse.json({ articles : data.articles });
   } catch (err) {
-    return NextResponse.json({ err: "Failed to fetch news"},{ status : 500});
+    console.error(err)
+    return NextResponse.json({error: 'failed to fetch'}, { status : 500});
   }
 }
