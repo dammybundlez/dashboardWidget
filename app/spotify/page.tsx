@@ -1,12 +1,12 @@
 'use client';
 
-import { useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Link } from 'lucide-react';
 
 
-export default function SpotifyPage() {
-  const searchParams = useSearchParams();
+function SearchComp() {
+   const searchParams = useSearchParams();
   const token = searchParams.get('access_token');
 
  
@@ -21,4 +21,10 @@ export default function SpotifyPage() {
       <p className="text-gray-600">connected to Spotify... <Link href='/'>return to dashboard</Link></p>
     </div>
   );
+}
+
+export default function SpotifyPage() {
+  <Suspense fallback={<div>loading...</div>}>
+    <SearchComp />
+  </Suspense>
 }
