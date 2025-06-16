@@ -8,12 +8,11 @@ import { Link } from 'lucide-react';
 export default function SpotifyPage() {
   const searchParams = useSearchParams();
   const token = searchParams.get('access_token');
-  const router = useRouter();
+
  
    useEffect(() => {
     if (token) {
       localStorage.setItem('spotify_token', token);
-      // router.push('http://127.0.0.1:3000/');
     }
   }, [token]);
 

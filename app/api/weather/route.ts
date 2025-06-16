@@ -20,6 +20,6 @@ export  async function GET( req : NextRequest) {
       icon: data.weather[0].icon,
     });
   } catch (err) {
-    NextResponse.json({ error: "Failed to fetch weather" } , { status : 500});
+    NextResponse.json({ err: "Failed to fetch weather" } , { status : 500});
   }
 }

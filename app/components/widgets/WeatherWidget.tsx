@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 interface Weather {
@@ -24,10 +25,12 @@ export default function WeatherWidget() {
       <h2 className="text-xl font-semibold mb-2">🌦 Weather</h2>
       {weather ? (
         <div className="flex items-center gap-4">
-          <img
+          <Image
             src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`}
             alt={weather.condition}
             className="w-12 h-12"
+            width={48}
+            height={48}
           />
           <div className="">
             <p className="text-lg font-bold">{weather.city}</p>

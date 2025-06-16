@@ -1,4 +1,3 @@
-// /app/api/callback/route.ts
 import { NextResponse } from 'next/server';
 import querystring from 'querystring';
 

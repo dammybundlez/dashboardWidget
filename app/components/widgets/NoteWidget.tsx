@@ -24,7 +24,7 @@ const NoteWidget = () => {
         if(hasMounted){
           localStorage.setItem('note', JSON.stringify(notes))   
         }
-    }, [notes])
+    }, [notes , hasMounted])
 
     const addNote = () => {
         if(!title.trim() && !content.trim()) return;

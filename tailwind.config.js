@@ -5,14 +5,8 @@ module.exports = {
     './app/components/ThemeToggle.tsx' , './app/page.tsx'
    ],
   theme: {
-    extend: {
-      fontFamily: {
-        lato: ['Lato', 'sans-serif'],
-        savate: ['Savate']
-      },
-    },
+    extend: {},
   },
   plugins: [],
-
   darkMode: 'class'
 };

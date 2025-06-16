@@ -1,4 +1,3 @@
-// app/api/crypto/route.ts
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req: NextRequest) {
@@ -17,6 +16,6 @@ export async function GET(req: NextRequest) {
       usd: data[coin].usd,
     });
   } catch (err) {
-    return NextResponse.json({ error: "Crypto fetch failed" }, { status: 500 });
+    return NextResponse.json({ err: "Crypto fetch failed" }, { status: 500 });
   }
 }

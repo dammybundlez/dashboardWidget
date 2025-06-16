@@ -4,7 +4,7 @@ import ClockWidget from "./widgets/ClockWidget";
 import CryptoWidget from "./widgets/CryptoWidget";
 import NewsWidget from "./widgets/NewsWidget";
 import NoteWidget from "./widgets/NoteWidget";
-import QuoteWidget from "./widgets/QuoteWidget"; // Add import
+import QuoteWidget from "./widgets/QuoteWidget";
 import SpotifyWidget from "./widgets/SpotifyWidget";
 import TodoWidget from "./widgets/TodoWidget";
 import WeatherWidget from "./widgets/WeatherWidget";

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { Quicksand } from 'next/font/google'
 import { FiMusic } from 'react-icons/fi';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const work_sans = Quicksand({
   subsets : ['latin'],
@@ -62,7 +63,7 @@ const SpotifyWidget = () => {
   return (
     <div className="p-2 bg-white rounded dark:bg-gray-800 shadow-md">
       <h2 className="text-lg font-bold mb-4 text-gray-900 dark:text-white flex items-center gap-2"><FiMusic/> Spotify</h2>
-      <img
+      <Image
         src={track.album.images[0].url}
         alt="Album cover"
         className="w-full object-cover h-48 rounded"
